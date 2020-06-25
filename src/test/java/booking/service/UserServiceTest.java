@@ -1,6 +1,7 @@
 package booking.service;
 
 import com.booking.entity.User;
+import com.booking.service.UserService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -16,7 +17,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class UserServiceTest {
-    private com.booking.service.UserService userService = new com.booking.service.UserService("UserService.txt");
+    private UserService userService = new UserService("UserService.txt");
     User u1 = new User("Ferid","123",123);
     User u2 = new User("Samir","231",124);
     User u3 = new User("Taleh","2345",125);

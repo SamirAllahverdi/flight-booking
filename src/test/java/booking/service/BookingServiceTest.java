@@ -4,6 +4,7 @@ import com.booking.entity.Booking;
 import com.booking.entity.Cities;
 import com.booking.entity.Flight;
 import com.booking.entity.Passenger;
+import com.booking.service.BookingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -19,7 +20,7 @@ import java.util.Optional;
 import static org.junit.jupiter.api.Assertions.*;
 
 class BookingServiceTest {
-    private com.booking.service.BookingService bookingService = new com.booking.service.BookingService("bookingServiceTest.txt");
+    private BookingService bookingService = new BookingService("bookingServiceTest.txt");
     Flight f1 = new Flight(32, "Kiev", Cities.AMSTERDAM, "13-03-2020", 25);
     Flight f2 = new Flight(35, "Kiev", Cities.OSLO, "16-03-2020", 15);
     Flight f3 = new Flight(43, "Kiev", Cities.MADRID, "15-03-2020", 135);
